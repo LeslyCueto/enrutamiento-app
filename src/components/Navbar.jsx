@@ -1,18 +1,19 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <div className="container">
-        <a className="btn btn-outline-info" href="/">
+        <NavLink className="btn btn-outline-info" to="/">
           Home
-        </a>
-        <a className="btn btn-outline-info" href="/about">
+        </NavLink>
+        <NavLink className="btn btn-outline-info" to="/about">
           About
-        </a>
-        <a className="btn btn-outline-info" href="/blog">
+        </NavLink>
+        <NavLink className="btn btn-outline-info" to="/blog">
           Blog
-        </a>
+        </NavLink>
       </div>
     </nav>
   );
